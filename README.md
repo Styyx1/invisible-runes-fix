@@ -1,6 +1,4 @@
-# CommonLibSSE Plugin Template
-
-This is a basic plugin template using CommonLibSSE.
+# Invisible Runes Fix
 
 ### Requirements
 * [XMake](https://xmake.io) [2.8.2+]
@@ -8,13 +6,12 @@ This is a basic plugin template using CommonLibSSE.
 
 ## Getting Started
 ```bat
-git clone https://github.com/Styyx1/commonlibsse-template --recursive
-cd commonlibsse-template
+git clone https://github.com/Styyx1/invisible-runes-fix --recursive
+cd invisible-runes-fix
 ```
 
 ### Build
-To build the project you first need to run the ``projectSetup.py`` and enter the data it asks for.   
-Then run the following command:
+To build run the following command:
 ```bat
 xmake build
 ```
