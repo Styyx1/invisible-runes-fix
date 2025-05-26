@@ -5,7 +5,7 @@ set_xmakever("2.8.2")
 includes("lib/commonlibsse")
 
 -- set project
-set_project("commonlibsse-template")
+set_project("invisible-runes-fix")
 set_version("1.0.0")
 set_license("GPL-3.0")
 
@@ -23,14 +23,23 @@ set_policy("package.requires_lock", true)
 -- set configs
 set_config("skyrim_ae", true)
 
+set_config("rex_ini", true)
+add_extrafiles("release/**.ini")
 -- targets
-target("commonlibsse-template")
+target("invisible-runes-fix")
     -- add dependencies to target
     add_deps("commonlibsse")
 
+    -- change build directory based on the version to compile for
+    if has_config("skyrim_ae") then
+        set_targetdir("/build/SkyrimAE/skse/plugins")
+    else
+        set_targetdir("/build/SkyrimSE/skse/plugins")
+    end  
+
     -- add commonlibsse plugin
     add_rules("commonlibsse.plugin", {
-        name = "commonlibsse-template",
+        name = "invisible-runes-fix",
         author = "styyx",
         description = "SKSE64 plugin template using CommonLibSSE"
     })

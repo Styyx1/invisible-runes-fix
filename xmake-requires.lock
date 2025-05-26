@@ -9,7 +9,7 @@
                 commit = "30bf09689d5f65e9ea4e3904ceb675f8f04f0789",
                 url = "https://github.com/xmake-io/xmake-repo.git"
             },
-            version = "3.30.5"
+            version = "3.31.1"
         },
         ["rsm-binary-io#31fecfc4"] = {
             repo = {
@@ -18,6 +18,14 @@
                 url = "https://github.com/xmake-io/xmake-repo.git"
             },
             version = "2.0.6"
+        },
+        ["simpleini#31fecfc4"] = {
+            repo = {
+                branch = "master",
+                commit = "193aab3a94c28a30d8d509b1c21ee9ec1db458bf",
+                url = "https://gitlab.com/tboox/xmake-repo.git"
+            },
+            version = "v4.22"
         },
         ["spdlog#9c36f0a9"] = {
             repo = {
